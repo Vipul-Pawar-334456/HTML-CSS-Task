@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Mode</title>
+
+    <style>
+
+        :root{
+            --bg: white;
+            --text: black;
+            --box: lightgray;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .page{
+            min-height: 100vh;
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 50px;
+            text-align: center;
+        }
+
+        .box{
+            background-color: var(--box);
+            padding: 30px;
+            width: 400px;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        #dark{
+            display: none;
+        }
+
+        label{
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            
+        }
+
+        #dark:checked ~ .page{
+            --bg: #222;
+            --text: white;
+            --box: #444;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <input type="checkbox" id="dark">
+
+    <label for="dark"> Dark Mode</label>
+
+    <div class="page">
+
+        <div class="box">
+            <h1>My Website</h1>
+            <p>This is a simple dark mode website.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

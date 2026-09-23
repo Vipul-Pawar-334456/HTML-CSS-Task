@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+</head>
+
+<style>
+button{
+    height: 50px;
+    width: 200px;
+    border: 2px solid black;
+    font-weight: 700;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    background-color: beige;
+    
+}
+
+button:hover{
+    background-color: brown;
+    color: aqua;
+    cursor: pointer;
+    box-shadow: 0px 5px 4px rgb(154, 99, 99);
+}
+
+.card{
+    
+    width: 350px;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover{
+    height: 200px;
+    width: 350px;
+    border: 4px solid rgb(125, 235, 243);
+    background-color: rgb(241, 187, 126);
+    box-shadow: 5px 7px 8px green;
+    color: rgb(102, 102, 68);
+}
+
+</style>
+
+
+<body>
+    <h2>Button Hover</h2>
+    
+    <button>Submit</button>
+
+    <h2>Card Hover</h2>
+
+    <div class="card">
+        <h2>Card Name Is Wedding Party</h2>
+        <p>Wedding party Starting from 5 am in night</p>
+    </div>
+</body>
+</html>

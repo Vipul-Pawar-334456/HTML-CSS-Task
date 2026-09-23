@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timeline</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        .timeline{
+            width: 500px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .timeline::before{
+            content: "";
+            position: absolute;
+            width: 4px;
+            height: 100%;
+            background-color: blue;
+            left: 10px;
+        }
+
+        .event{
+            background-color: white;
+            margin: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .event::after{
+            content: "";
+            width: 15px;
+            height: 15px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            left: -17px;
+            top: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="timeline">
+
+        <div class="event">
+            <h2>2023</h2>
+            <p>Started College</p>
+        </div>
+
+        <div class="event">
+            <h2>2024</h2>
+            <p>Learned HTML and CSS</p>
+        </div>
+
+        <div class="event">
+            <h2>2025</h2>
+            <p>Learned Java and SQL</p>
+        </div>
+
+        <div class="event">
+            <h2>2026</h2>
+            <p>Started Web Development</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

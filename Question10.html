@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accessibility Audit</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: white;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        main {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .box {
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid gray;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 90%;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>My Website</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <div class="box">
+
+            <h2>About Us</h2>
+
+            <p>
+                Welcome to our website. We are learning
+                accessibility and HTML.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+                width="300"
+            >
+
+        </div>
+
+
+        <div class="box">
+
+            <h2>Registration Form</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                >
+
+                <br>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                >
+
+                <br>
+
+                <button>
+                    Register
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="box">
+
+            <h2>Contact</h2>
+
+            <button aria-label="Contact Us">
+                📞
+            </button>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

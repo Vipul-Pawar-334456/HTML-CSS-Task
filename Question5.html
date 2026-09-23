@@ -1,0 +1,80 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Image Gallery</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .gallery img:hover {
+            transform: scalex(1.03);
+        }
+
+    
+        @media (max-width: 600px) {
+
+            .gallery {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            .gallery img {
+                height: 200px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Nature Beautiful Image Gallery</h1>
+
+    <div class="gallery">
+
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Beautiful mountain landscape">
+
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b" alt="Green forest with trees">
+
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Blue ocean beach with sky">
+
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" alt="Beautiful sunset over mountains">
+
+        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9" alt="Waterfall surrounded by green nature">
+
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429" alt="Lake surrounded by mountains">
+
+    </div>
+
+</body>
+
+</html>

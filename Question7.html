@@ -1,0 +1,126 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login Modal</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+       
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+       
+        .login-box {
+            background-color: white;
+            width: 300px;
+            padding: 25px;
+            margin: 100px auto;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .close {
+            float: right;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>My Website</h1>
+
+    
+    <button onclick="openModal()">
+        Login
+    </button>
+
+
+    
+
+    <div class="modal"
+         id="loginModal"
+         role="dialog"
+         aria-labelledby="loginTitle"
+         aria-modal="true">
+
+        <div class="login-box">
+
+           
+            <button class="close" onclick="closeModal()" aria-label="Close login">
+                X
+            </button>
+
+            <h2 id="loginTitle">Login</h2>
+
+            <form>
+
+                <label for="email">Email</label>
+                <br>
+
+                <input type="email"
+                       id="email"
+                       placeholder="Enter email"
+                       required>
+
+                <br>
+
+                <label for="password">Password</label>
+                <br>
+
+                <input type="password"
+                       id="password"
+                       placeholder="Enter password"
+                       required>
+
+                <br>
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    
+
+</body>
+
+</html>

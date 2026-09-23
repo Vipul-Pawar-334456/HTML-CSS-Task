@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * { margin: 0;
+        padding: 0; 
+        box-sizing: border-box; 
+        }
+    .logo{
+        color: white;
+        height: 50px;
+        width: 150px;
+    }    
+
+
+    .logo:hover{
+            border: 2px solid white;
+        }
+
+    body{
+        font-family: Arial, sans-serif;
+    }
+
+    header{
+        background-color: black;
+        padding: 15px 30px;
+    }
+
+    nav { display: flex; 
+        justify-content: space-between; 
+        align-items: center; 
+    } 
+
+    .logo { color: white; 
+        font-size: 25px; 
+        font-weight: bold; } 
+
+    .menu { display: flex; 
+            gap: 25px; 
+            list-style: none;}
+
+
+    .menu a { color: white;
+         text-decoration: none;
+          font-size: 18px; }
+
+    .menu a:hover { 
+            color: yellow; } 
+         
+    main { padding: 50px;
+        text-align: center; }
+
+    @media (max-width: 600px) {
+         header { padding: 15px; } 
+
+         nav { flex-direction: column; 
+            gap: 15px; } 
+
+        .menu { flex-direction: column; 
+            text-align: center; 
+            gap: 10px; } 
+
+        .menu a { font-size: 16px; }
+
+        main { padding: 30px 15px; }
+        
+</style>
+
+<body>
+   <header>
+         <nav role="navigation" aria-label="Main navigation">
+
+            <div class="logo">
+                My Website
+            </div>
+
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+         </nav> 
+    </header>
+
+    <main>
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple responsive and accessible website.</p>
+        <br>
+
+        <section id = "about">
+            <h2>About me</h2>
+            <p>I am learning HTML an CSS.</p>
+        </section>
+    </main>
+</body>
+</html>

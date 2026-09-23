@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Mode</title>
+
+    <style>
+
+        :root{
+            --bg: white;
+            --text: black;
+            --box: lightgray;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .page{
+            min-height: 100vh;
+            background-color: var(--bg);
+            color: var(--text);
+            padding: 50px;
+            text-align: center;
+        }
+
+        .box{
+            background-color: var(--box);
+            padding: 30px;
+            width: 400px;
+            margin: 30px auto;
+            border-radius: 10px;
+        }
+
+        #dark{
+            display: none;
+        }
+
+        label{
+            background-color: black;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            
+        }
+
+        #dark:checked ~ .page{
+            --bg: #222;
+            --text: white;
+            --box: #444;
+        }
+
+    </style>
+</head>
+
+<body><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion</title>
+
+    <style>
+
+        body{
+            font-family: Arial;
+            background-color: lightgray;
+        }
+
+        .faq{
+            width: 600px;
+            margin: 50px auto;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        details{
+            background-color: white;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        summary{
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        p{
+            color: gray;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="faq">
+        <h1>FAQ</h1>
+        <details>
+            <summary>What is HTML</summary>
+            <p>HTML is used to create web structure</p>
+        </details>
+        <details>
+            <summary>What is CSS</summary>
+            <p>CSS is used to create web Designs</p>
+        </details>
+        <details>
+            <summary>What is Java Script</summary>
+            <p>Java Script is used to make website intractive</p>
+        </details>
+        <details>
+            <summary>What is Python</summary>
+            <p>Python is easy syntax and open source language</p>
+        </details>
+    </div>
+
+</body>
+</html>
+
+    <input type="checkbox" id="dark">
+
+    <label for="dark">🌙 Dark Mode</label>
+
+    <div class="page">
+
+        <div class="box">
+            <h1>My Website</h1>
+            <p>This is a simple dark mode website.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

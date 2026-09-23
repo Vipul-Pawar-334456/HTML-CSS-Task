@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+
+nav {
+    background-color: #222;
+    color: white;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: yellow;
+    border: 1px solid white;
+}
+
+
+.home {
+    background-color: lightblue;
+
+    text-align: center;
+
+    padding: 100px 20px;
+}
+
+.home h1 {
+    font-size: 40px;
+}
+
+.home h2 {
+    margin: 10px;
+}
+
+button {
+    background-color: #222;
+    color: white;
+
+    padding: 10px 20px;
+
+    border: none;
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+
+
+section {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skillss:hover{
+    border-radius: 10px;
+    background-color: rgb(227, 227, 147);
+    box-shadow: 0 0 15px gray;
+    transform: scale(1.10);
+}
+
+.skills div {
+    background-color: white;
+
+    padding: 30px;
+
+    border: 1px solid black;
+}
+
+
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+
+    width: 250px;
+
+    padding: 25px;
+
+    border: 1px solid #ccc;
+}
+
+ .card:hover{
+          border-radius: 10px;
+         background-color: rgb(227, 227, 147);
+         box-shadow: 0 0 15px gray;
+    }
+
+
+
+
+footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav div {
+        margin-top: 15px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+     
+    
+    .card {
+        width: 90%;
+    }
+
+}
+
+
+
+</style>
+<body>
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    
+    <section id="home" class="home">
+        <h1>Hello, I'm Rahul</h1>
+
+        <h2>Web Developer</h2>
+
+        <p>
+            I am learning HTML and CSS and creating simple websites.
+        </p>
+
+        <button>My Projects</button>
+    </section>
+
+
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            My name is Rahul. I am learning web development.
+            I enjoy creating websites using HTML and CSS.
+        </p>
+    </section>
+
+
+  
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+            <div class="skillss">HTML</div>
+            <div class="skillss">CSS</div>
+            <div class="skillss">JavaScript</div>
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Project 1</h3>
+                <p>My first HTML website.</p>
+            </div>
+
+            <div class="card">
+                <h3>Project 2</h3>
+                <p>My first CSS website.</p>
+            </div>
+
+            <div class="card">
+                <h3>Project 3</h3>
+                <p>My simple portfolio website.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+   
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Rahul@gmail.com</p>
+        <h1>Contact Me</h1>
+    </footer>
+
+</body>
+</html>
+
+</body>
+</html>

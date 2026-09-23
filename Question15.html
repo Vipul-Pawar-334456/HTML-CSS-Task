@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav{
+            position: sticky;
+            top: 0px;
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px gray;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin-right: 40px;
+            font-weight: 700;
+
+        }
+
+        .content{
+            padding: 30px;
+        }
+
+        .box{
+            height: 300px;
+            border-radius: 10px;
+            background-color: rgb(244, 244, 179);
+            box-shadow: 6px 8px 4px green;
+            margin: 60px 0;
+            padding: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="content">
+
+        <h1>My Website</h1>
+
+        <div class="box">
+            <h2>Section 1</h2>
+            <p>This is my first section.</p>
+        </div>
+
+        <div class="box">
+            <h2>Section 2</h2>
+            <p>This is my second section.</p>
+        </div>
+
+        <div class="box">
+            <h2>Section 3</h2>
+            <p>This is my third section.</p>
+        </div>
+
+        <div class="box">
+            <h2>Section 4</h2>
+            <p>This is my fourth section.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

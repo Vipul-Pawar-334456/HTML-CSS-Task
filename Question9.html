@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 30px;
+        }
+
+        .form-box {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 50%;
+            
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input,select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background-color: black;
+            color: rgb(147, 81, 81);
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+
+        @media (max-width: 500px) {
+
+            .form-box {
+                width: 90%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h1>Event Registration</h1>
+
+        <form>
+
+            <label for="name">Full Name</label>
+
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+            >
+
+
+            <label for="email">Email</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+
+            <label for="phone">Phone Number</label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter 10 digit number"
+                required
+            >
+
+
+            <label for="date">Event Date</label>
+
+            <input
+                type="date"
+                id="date"
+                name="date"
+                required
+            >
+
+
+            <label for="event">Select Event</label>
+
+            <select required>
+
+                <option>Select Event</option>
+                <option>Coding Workshop</option>
+                <option>Web Development Workshop</option>
+                <option>Career Seminar</option>
+
+            </select>
+
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
